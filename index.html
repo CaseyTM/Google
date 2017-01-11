@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Maps</title>
+	<style type="text/css" media="screen">
+		#map{
+			height: 100vh;
+			width: 50%;
+			float: left;
+		}
+		#cities-container{
+			width: 50%;
+			float: left;
+		}
+		th, td{
+			border: 1px solid black;
+			text-align: center;
+		}
+		.city-name{
+			text-decoration: underline;
+			cursor: pointer;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="map">Cities are loading</div>
+	<div id="cities-container"></div>
+	<script src="https://fb.me/react-15.1.0.js"></script>
+	<script src="https://fb.me/react-dom-15.1.0.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCil5UXPHllSpo1kPWDLV7FwcQMGX1pdas"></script>
+	<script type="text/javascript" src="cities.js"></script>
+	<script type="text/babel" src="maps.jsx"></script>
+
+</body>
+</html>
