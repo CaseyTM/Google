@@ -217,6 +217,10 @@ getDirections: function(){
 })
 
 ReactDOM.render(
-	<Cities cities={cities} />,
+	<ReactRouter.Router>
+		<ReactRouter.Route path="/" component={App} />
+			<ReactRouter.IndexRoute component={Cities} cities={cities}
+			<ReactRouter.Route path="/cities" component={Test} />
+	<ReactRouter.Router>,
 	document.getElementById('cities-container')
 	)
